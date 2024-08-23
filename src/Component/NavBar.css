@@ -65,3 +65,10 @@
     width: 90px;
     height: 90px;
 }
+
+@media (max-width:608px){
+    .logo_img{
+        margin: auto;
+    }
+
+}
