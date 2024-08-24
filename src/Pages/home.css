@@ -24,7 +24,7 @@
     height: fit-content;
     top: 7%;
     color: white;
-    line-height: 1.8rem;
+    line-height: 2rem;
 }
 
 .icon {
@@ -219,5 +219,17 @@
     }
     .learn, .extra_info {
         width: 95vw;
+    }
+    .reletive {
+        line-height: 1.5rem;
+       
+    }
+     
+}
+
+@media (max-width: 375px) {
+    .reletive {
+        line-height: 1.2rem;
+       
     }
 }
