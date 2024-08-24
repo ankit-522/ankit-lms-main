@@ -9,13 +9,7 @@ import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/m
 export default function Pactices(){
     return(
       <div className="quize_card">
-       {/* <div id="PracticeNavBar">
-        <h1>Practices</h1>
-        <ul>
-            <li><Link to={"/Pactices/Question"}>Question</Link></li>
-
-        </ul>
-      </div> */}
+      
 
       <div className='card_quize'>
         <Link to={"/pactices/JavaScript"} style={{ textDecoration: 'none' }}>

@@ -1,45 +1,68 @@
-.courses_img{
-    /* height: 80vh; */
-    
-    /* margin-top: 4rem; */
-   
-    /* border: 2px  solid red; */
-}
-
-.courses_img img{
+.courses_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .courses_img img {
     height: 70vh;
     width: 90%;
-    /* border: 2px solid red; */
-}
-.courses{
-    
+    max-width: 1000px; /* Prevents the image from growing too large on large screens */
+    object-fit: cover;
+  }
+  
+  .courses {
     background-color: #fcf7f7d1;
-}
-.courses-heading{
-    width: fit-content;
-    font-size: 5rem;
-    background: hsla(24, 89%, 38%, 1);
+    /* padding: 2rem 1rem; */
+  }
 
+  
+  
+  .courses-heading {
+    font-size: 4rem;
     background: linear-gradient(225deg, rgb(100, 42, 4) 0%, rgb(5, 72, 80) 100%);
-    
-    background: -moz-linear-gradient(225deg, rgb(116, 51, 7) 0%, rgb(7, 92, 101) 100%);
-    
-    background: -webkit-linear-gradient(225deg, rgb(93, 41, 6) 0%, rgb(8, 85, 93) 100%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B54F0B", endColorstr="#0F98A7", GradientType=1 );
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E7945D", endColorstr="#24D2E6", GradientType=1 );
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-
-   padding: 0.6rem;
-   user-select: none;
-}
-
-@media (max-width: 768px){
-    .courses_img img {
-        height: 60vh;
-        width: 90%;
-        border: 2px solid red;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 1200px) {
+    .courses-heading {
+      font-size: 3.5rem;
     }
-}
+  }
+  
+  @media (max-width: 992px) {
+    .courses-heading {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .courses-heading {
+      font-size: 2.5rem;
+    }
+  
+    .courses_img img {
+      height: 60vh;
+      width: 95%;
+      border: none; /* Removed the red border for better aesthetics */
+    }
+    
+  }
+  
+  @media (max-width: 576px) {
+    .courses-heading {
+      font-size: 2rem;
+    }
+  
+    .courses_img img {
+      height: 50vh;
+      width: 100%;
+    }
+  }
+  
